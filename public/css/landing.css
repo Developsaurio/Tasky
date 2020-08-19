@@ -16,7 +16,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  background: url("/img/hero.jpg") no-repeat top center/auto 700px;
+  background: url("/img/hero.jpg") no-repeat top center/auto 900px;
   padding-bottom: 350px;
   margin-bottom: -350px;
 }

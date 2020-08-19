@@ -8,7 +8,7 @@
   </title>
   <meta content="width=device-width, user-scalable=no" name="viewport">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ mix('css/landing.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/landing.css') }}">
 </head>
 
 <body>
@@ -255,5 +255,5 @@
       </div>
     </div>
   </main>
-  <script src="{{ mix('js/landing.js') }}"></script>
+  <script src="{{ asset('js/landing.js') }}"></script>
 </body>

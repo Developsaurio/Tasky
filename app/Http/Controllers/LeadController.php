@@ -14,7 +14,7 @@ class LeadController extends Controller
      */
     public function index()
     {
-        //
+        return view('/');
     }
 
     /**
@@ -36,19 +36,22 @@ class LeadController extends Controller
     public function store(Request $request)
     {
         $validData = $request->validate([
-            'nombre' => 'required',
+            'name' => 'required',
             'email' => 'required',
-            'telefono' => 'required'
+            'phone' => 'required'
         ]);
 
         $lead = new Lead();
-        $particula->name = $validData['nombre'];
-        $particula->email = $validData['email'];
-        $particula->phone = $validData['telefono'];
+        $lead->name = $validData['name'];
+        $lead->email = $validData['email'];
+        $lead->phone = $validData['phone'];
         
         $lead->save();
 
         return redirect('/');
+        
+        // echo $request->name;
+        // echo $request;
     }
 
     /**

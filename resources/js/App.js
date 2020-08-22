@@ -45,6 +45,7 @@ const setField = (e) => {
 
 return (
     <form action="/api/lead" method="POST">
+      @csrf
       <div className="p">
         <label>
           <span className="ui-label">
@@ -57,7 +58,7 @@ return (
           <input type="text" 
             className="inputtext full" 
             placeholder="Nombre y apellidos"
-            name="name" value={name} 
+            name="nombre" value={name} 
             onChange={setField}
             required autofocus/>
         </label>
@@ -92,7 +93,7 @@ return (
           <input type="tel" 
           className="inputtext full" 
           placeholder="10 dígitos" 
-          name="phone" 
+          name="telefono" 
           value={phone} 
           required max="10" 
           onChange={setField}

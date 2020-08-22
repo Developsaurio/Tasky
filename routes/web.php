@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('landing');
 });
 
-Route::post('/api/lead', 'LeadController@store');
+Route::post('/lead', 'LeadController@store');
